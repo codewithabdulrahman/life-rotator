@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    padding: 33px;
+    background-color: white;
+    overflow: hidden;
+}
+
+input[type=text] {
+    margin-left: 62px;
+    margin-bottom: -32px;
+    font: 17px Calibri;
+    width: 471px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.modal_select {
+
+    width: 266px;
+}
+
+.specific_text {
+    margin-left: 29px;
+    margin-bottom: -32px;
+    font: 17px Calibri;
+    width: 471px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.category_select {
+    margin-left: 11px;
+
+
+    font: 17px Calibri;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+input[type=button] {
+    font: 17px Calibri;
+    width: auto;
+    float: right;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.button_back {
+    font: 17px Calibri;
+    width: auto;
+    float: left;
+    cursor: pointer;
+    padding: 7px;
+}
+input[type=checkbox]
+{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    padding: 10px;
+}
+.sementic{
+    padding: 16px;
+    background-color: white;
+    overflow: hidden;
+border-style: solid;
+}
+#heading{
+
+    margin-left: 16px;
+
+}
+#paragraph{
+    margin-bottom: -1px;
+    border: groove;
+}
+#btn_next{
+    border-color: white;
+    color: white;
+    background-color: #1947ec;
+    float: unset;
+    visibility: visible;
+}
+
+th,td {
+    text-align: center;
+}
+
+/*td {*/
+/*    text-align: center;*/
+/*}*/
+#bt_del{
+    font: 17px Calibri;
+    width: auto;
+    float: right;
+    cursor: pointer;
+    padding: 7px;
+    color: white;
+    margin-right: 3pc;
+    background-color: red;
+    border-radius: 12px;
+}
+#add_category_button{
+    margin-left: 54pc;
+    border-radius: 12px;
+}#button_single_list{
+
+    border-radius: 12px;
+}
+#bt_del_catgory{
+
+    color: red;
+    margin-right: 79px;
+"
+}
+.button_radius {
+    border-radius: 12px;
+}
+
+#add {
+    border-radius: 12px;
+    margin-left: -29px;
+}
+
+#append_select {
+    margin-right: 257px;
+    padding-left: 1px;
+}
+#page{
+    color: black;
+    background-color: white;
+}
+#show_list {
+    border-radius: 12px;
+
+}
+
+.text_box {
+
+    font-family: unset;
+    font-weight: 600;
+    font-size: 40px;
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+
+}
+
+.show_box {
+
+    margin: 0 auto;
+    width: 637px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border-style: ridge;*/
+    /*border-color: #a4a4a4*/
+}
+
+#bt_edit {
+    margin-right: 3pc;
+    background-color: white;
+}
+#btn_prev{
+    border-color: white;
+    color: white;
+    background-color: #1947ec;
+    float: left;
+    visibility: visible;
+    margin-left: 35px;
+}
+#button_container{
+    margin-left: -8pc;
+}
+#bt_add {
+    margin-right: 6px;
+    background-color: white;
+}
+
+#bt_shuffle {
+    background-color: white;
+}
+
+#text {
+    font-family: unset;
+    font-weight: 600;
+    font-size: 40px;
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 104px;
+    border: white;
+    border: 1px solid #ccc;
+}
