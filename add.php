@@ -1,28 +1,19 @@
-<!DOCTYPE html>
+
 <html>
-<head>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
-    <title>Save form Data in a Local Storage using JavaScript</title>
-    <link href="custom/custom.css" media="all" type="text/css" rel="stylesheet">
-    <script src="custom/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
-
-</head>
+<?php include"assets/include_header/header.php"?>
 <body>
 <div id="main_container">
 
     <!--Add few elements to the form-->
     <div class="show_box" id="show_box">
         <form method="POST">
-            <textarea id="text" class="specific_text" name="text" placeholder="Write Some Text ..."></textarea>
+            <textarea id="text" class="specific_text" name="text" placeholder="Write Some Text ..." required></textarea>
 
 
-            <div id="append_select">
-                <!--                <label >Choose a Category:</label>-->
+            <div class="show_box">
 
-                <select class="category_select" name="category_list" id="category_select">
-                    <option value="">--Please choose a category--</option>
+                                <select name="basic[]" id="mutiple_select" multiple="multiple" >
+
                     <?php
                     include "config.php";
 
@@ -44,14 +35,16 @@
 
                 </select>
 
+
             </div>
             <div style="margin-left: 4px;">
 
                 <button type="submit" id="add" name="submit" class="btn btn-primary">Add</button>
         </form>
-        <button type="button" id="show_list" class="btn btn-warning" onclick="document.location='index.php'">Show
-            List
-        </button>
+        <br>
+        <br>
+        <br>
+     <a href="paginate.php">Cancel</a>
     </div>
 
 </div>
@@ -59,8 +52,16 @@
 </div>
 
 </body>
+<script>
 
 
+    $('#mutiple_select').multiselect({
+
+        columns: 1,
+        placeholder: 'Select Category',
+    });
+
+</script>
 </html>
 <?php
 // Using database connection file here
@@ -68,15 +69,15 @@ include "config.php";
 if (isset($_POST['submit'])) {
 //    $data = $_POST['text'];
     $data = $_POST['text'];
-    $category = $_POST['category_list'];
-
-    $insert = mysqli_query($conn, "INSERT INTO `text_list`(`data`, `category`) VALUES ('$data','$category')");
+    $category = $_POST['basic'];
+    $temp_cat_json=json_encode($category);
+    $insert = mysqli_query($conn, "INSERT INTO `text_list`(`data`, `category`) VALUES ('$data','$temp_cat_json')");
 
     if (!$insert) {
         echo $insert;
 //         echo mysqli_error();
     } else {
-        echo "<script>window.open('index.php','_self')</script>";
+        echo "<script>window.open('paginate.php','_self')</script>";
     }
 }
 
