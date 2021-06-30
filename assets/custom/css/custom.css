@@ -7,7 +7,11 @@ div {
     background-color: white;
     overflow: hidden;
 }
-
+input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 2px;
+}
 input[type=text] {
     margin-left: 62px;
     margin-bottom: -32px;
