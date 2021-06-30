@@ -53,7 +53,9 @@
 
 </body>
 <script>
-
+    $(document).ready( function () {
+        $('ul').css('list-style', 'none');
+    });
 
     $('#mutiple_select').multiselect({
 

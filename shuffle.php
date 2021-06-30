@@ -121,13 +121,22 @@
 
         objJson.push(item);
     }
-    for (let a = 0; a < objJson.length; a++) {
-        let x = objJson[a];
-        let y = Math.floor(Math.random() * (a + 1));
-        objJson[a] = objJson[y];
-        objJson[y] = x;
+    // for (let a = 0; a < objJson.length; a++) {
+    //     let x = objJson[a];
+    //     let y = Math.floor(Math.random() * (a + 1));
+    //     objJson[a] = objJson[y];
+    //     objJson[y] = x;
+    // }
+
+
+    for (i = 0; i < objJson.length - 1; i++) {
+        let j = i + Math.floor(Math.random() * (objJson.length - i));
+
+        let temp = objJson[j];
+        objJson[j] = objJson[i];
+        objJson[i] = temp;
     }
-    console.log(objJson)
+    // console.log(objJson)
 
     function prevPage() {
         if (current_page > 1) {

@@ -211,7 +211,7 @@
 
             // add global select all options
             if( instance.options.selectAll ) {
-                optionsList.before('<a href="#" class="ms-selectall global">Select all</a>');
+                optionsList.before('<a href="#" style="margin-left: 47px;" class="ms-selectall global">Select all</a>');
             }
 
             // handle select all option

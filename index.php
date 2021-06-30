@@ -29,11 +29,13 @@
             ?>
                  <br>
                  <br>
-                 <button class="btn-info" id="add_button">
-      <span onclick="document.location='add.php'">
-           +
-      </span>
-                 </button>
+
+                 <input type="button" id="bt_add_index" onclick="document.location='add.php'" class="button_radius" value="+"/>
+<!--                 <button class="btn-info" id="add_button">-->
+<!--      <span onclick="document.location='add.php'">-->
+<!--           +-->
+<!--      </span>-->
+<!--                 </button>-->
 <!--        <button id='add_button' type='button' class='btn-info'  onclick="document.location='add.php'"> + </button>-->
 
     </div>

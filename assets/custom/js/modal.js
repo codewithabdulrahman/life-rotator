@@ -72,7 +72,7 @@
                 '    min-height: 200px;\n' +
                 '    overflow: auto;\n' +
                 '    max-height: 200px;\n' +
-                '    display: none;"><ul></ul></div></div>');
+                '    display: none;"><ul style="column-count: 1; column-gap: 0px; list-style: none;"></ul></div></div>');
             var placeholder = $(instance.element).next('.ms-options-wrap').find('> button:first-child');
             var optionsWrap = $(instance.element).next('.ms-options-wrap').find('> .ms-options');
             var optionsList = optionsWrap.find('> ul');
@@ -212,7 +212,7 @@
 
             // add global select all options
             if( instance.options.selectAll ) {
-                optionsList.before('<a href="#" class="ms-selectall global">Select all</a>');
+                optionsList.before('<a href="#" style="margin-left: 48px" class="ms-selectall global">Select all</a>');
             }
 
             // handle select all option

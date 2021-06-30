@@ -198,8 +198,8 @@
         changePage(1);
 
     };
-    $(document).ready(function () {
 
+    $(document).ready(function () {
 
 
 
@@ -215,6 +215,7 @@
             let theDiv = document.getElementById("edit_category_select");
             theDiv.innerHTML += '<option selected value=' + JSON.parse(tmp_category) + '>' + JSON.parse(tmp_category) + '</option>';
             let data = $('#paragraph').text();
+
             $('#edit_category_select').multiselect({
                 columns: 1,
                 placeholder: 'Select Category',
