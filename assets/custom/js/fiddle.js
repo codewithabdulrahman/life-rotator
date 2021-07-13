@@ -165,7 +165,7 @@
 
             // add search box
             if( instance.options.search ) {
-                optionsList.before('<div class="ms-search"><input type="text" value="" placeholder="'+ instance.options.searchOptions['default'] +'" /></div>');
+                optionsList.before('<div class="ms-search"><input type="text" id="custom_search" value="" placeholder="'+ instance.options.searchOptions['default'] +'" /></div><br>');
 
                 var search = optionsWrap.find('.ms-search input');
                 search.on('keyup', function(){
@@ -303,6 +303,7 @@
                     });
                 }
             }
+
             else {
                 // add CSS3 column styles
                 optionsList.css({

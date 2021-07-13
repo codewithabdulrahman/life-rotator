@@ -21,13 +21,7 @@
     will-change: transform;
 }
 
-.select2-search__field{
-    height: 25px;
-    font-family: unset;
-    font-weight: 600;
-    font-size: 19px;
-    width: 100%;
-}
+
 div {
     padding: 33px;
     background-color: white;
@@ -89,8 +83,8 @@ input[type=text] {
     display: inline-block;
 }
 #bt_add_index {
-    margin-right: 222px;
-    margin-left: 222px;
+    margin-right: 213px;
+    margin-left: 213px;
     color: #999999;
     font-weight: 600;
     border: 2px solid #e6e1e1 ;
@@ -166,10 +160,18 @@ border-style: solid;
     margin-left: -34px;
 }
 #paragraph{
+    
+    overflow-wrap: break-word;
     font-size: xx-large;
     margin-bottom: -12px;
     font-weight: 700;
+    height: 239px;
+    width: 578px;
+    
 }
+#paragraph:hover {
+    overflow-y: scroll;
+  }
 #btn_next{
     font-weight: 600;
     height: 42px;
@@ -291,6 +293,9 @@ a:hover {
     width: 739px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -93px;
+    margin-top: 0px;
+
     /*border-style: ridge;*/
     /*border-color: #a4a4a4*/
 }
@@ -368,19 +373,18 @@ font-size: 19px;
 background-color: white;
 margin-top: 0px;
 margin-bottom: 0px;
-height: 324px;
+height: 154px;
 border: white;
 border: 1px solid #ccc;
 }
 #text_category {
-    width: 40pc;
-    font-family: unset;
-    font-weight: 600;
-    font-size: 19px;
-    background-color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: 160px;
-    border: white;
-    border: 1px solid #ccc;
+font-family: unset;
+font-weight: 600;
+font-size: 40px;
+background-color: white;
+margin-top: 0px;
+margin-bottom: 0px;
+height: 83px;
+border: white;
+border: 1px solid #ccc;
 }
