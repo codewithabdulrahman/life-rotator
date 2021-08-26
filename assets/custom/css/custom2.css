@@ -160,13 +160,11 @@ border-style: solid;
     margin-left: -34px;
 }
 #paragraph{
-    
-    overflow-wrap: break-word;
+
     font-size: xx-large;
-    margin-bottom: -12px;
     font-weight: 700;
-    height: 239px;
     width: 578px;
+    margin-left: 35px;
     
 }
 #paragraph:hover {

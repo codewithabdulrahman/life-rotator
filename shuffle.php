@@ -164,7 +164,7 @@
 
         for (let i = (page - 1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
 
-            listing_table.innerHTML += '<div id=\'sementic\'><p style ="overflow-wrap: break-word; "id=\'paragraph\' type=\'text\' class=\'specific_text\'  value=> ' + objJson[i].data + ' </p><p id=\'id_hidden\' hidden type=\'text\' class=\'specific_text\'  value=> ' + objJson[i].id + ' </p><p id=\'hidden_category_tmp\' hidden type=\'text\' class=\'specific_text\'  value=> ' + objJson[i].category + ' </p></div>';
+            listing_table.innerHTML += '<div id=\'sementic\'><textarea class="form-control"  style="margin-top: 0px; margin-bottom: 0px; height: 358px; background-color: white " readonly name="edit_text" id=\'paragraph\' rows="4">' + objJson[i].data + '</textarea><p id=\'id_hidden\' hidden type=\'text\' class=\'specific_text\'  value=> ' + objJson[i].id + ' </p><p id=\'hidden_category_tmp\' hidden type=\'text\' class=\'specific_text\'  value=> ' + objJson[i].category + ' </p></div>';
         }
 
 
